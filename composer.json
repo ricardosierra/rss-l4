@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RicardoSierra\\Rss\\": "src/Thujohn/Rss/"
+            "RicardoSierra\\Rss\\": "src/Rss/"
         }
     },
     "autoload-dev": {
       "psr-4": {
-          "Overtrue\\LaravelFollow\\Test\\": "tests"
+          "RicardoSierra\\Test\\": "tests"
       }
     },
     "extra": {

@@ -1,4 +1,6 @@
-<?php namespace RicardoSierra\Rss;
+<?php 
+
+namespace RicardoSierra\Rss;
 
 use Illuminate\Support\Facades\Facade;
 
