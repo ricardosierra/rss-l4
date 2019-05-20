@@ -1,6 +1,6 @@
-<?php namespace Thujohn\Rss;
+<?php namespace RicardoSierra\Rss;
 
-use Thujohn\Rss\Channel;
+use RicardoSierra\Rss\Channel;
 
 class Rss {
 	protected $version = '';

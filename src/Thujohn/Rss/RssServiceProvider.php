@@ -1,4 +1,6 @@
-<?php namespace Thujohn\Rss;
+<?php 
+
+namespace RicardoSierra\Rss;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +20,7 @@ class RssServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('thujohn/rss');
+		$this->package('ricardosierra/rss');
 	}
 
 	/**
@@ -28,10 +30,9 @@ class RssServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['rss'] = $this->app->share(function($app)
-		{
+        $this->app->singleton(Rss::class, function ($app) {
 			return new Rss;
-		});
+        });
 	}
 
 	/**
@@ -41,7 +42,9 @@ class RssServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('rss');
+		return [
+            Rrs::class
+        ];
 	}
 
 }

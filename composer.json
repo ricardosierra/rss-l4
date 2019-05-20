@@ -1,21 +1,41 @@
 {
-    "name": "thujohn/rss",
-    "description": "RSS builder for Laravel 4",
-    "keywords": ["rss", "laravel", "laravel4"],
+    "name": "ricardosierra/rss",
+    "description": "RSS builder for Laravel 5",
+    "keywords": ["rss", "laravel", "laravel5"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Ricardo Sierra",
+            "email": "contato@ricardosierra.com.br"
+        },
         {
             "name": "thujohn",
             "email": "jonathan.thuau@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.*|5.*"
+        "php": ">=7.0.0",
+        "illuminate/support": "4.*|5.*|6.*"
     },
     "autoload": {
         "psr-4": {
-            "Thujohn\\Rss\\": "src/Thujohn/Rss/"
+            "RicardoSierra\\Rss\\": "src/Thujohn/Rss/"
+        }
+    },
+    "autoload-dev": {
+      "psr-4": {
+          "Overtrue\\LaravelFollow\\Test\\": "tests"
+      }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RicardoSierra\\Rss\\RssServiceProvider"
+            ],
+            "aliases": {
+                "Rss": "RicardoSierra\\Rss\\RssFacade"
+            }
         }
     }
+
 }

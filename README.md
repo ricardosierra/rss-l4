@@ -2,27 +2,27 @@
 
 RSS builder for Laravel 4
 
-[![Build Status](https://travis-ci.org/thujohn/rss-l4.png?branch=master)](https://travis-ci.org/thujohn/rss-l4)
+[![Build Status](https://travis-ci.org/ricardosierra/rss-l4.png?branch=master)](https://travis-ci.org/ricardosierra/rss-l4)
 
 
 ## Installation
 
-Add `thujohn/rss` to `composer.json`.
+Add `ricardosierra/rss` to `composer.json`.
 
-    "thujohn/rss": "~1.0"
+    "ricardosierra/rss": "~2.0"
     
 Run `composer update` to pull down the latest version of RSS.
 
 Now open up `app/config/app.php` and add the service provider to your `providers` array.
 
     'providers' => array(
-        'Thujohn\Rss\RssServiceProvider',
+        'RicardoSierra\Rss\RssServiceProvider',
     )
 
 Now add the alias.
 
     'aliases' => array(
-        'Rss' => 'Thujohn\Rss\RssFacade',
+        'Rss' => 'RicardoSierra\Rss\RssFacade',
     )
 
 

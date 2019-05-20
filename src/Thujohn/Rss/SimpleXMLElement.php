@@ -1,4 +1,4 @@
-<?php namespace Thujohn\Rss;
+<?php namespace RicardoSierra\Rss;
 
 /**
  * @TYPO3\Flow\Annotations\Proxy(false)
