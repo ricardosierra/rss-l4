@@ -20,7 +20,7 @@ class RssServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('ricardosierra/rss');
+		// $this->package('ricardosierra/rss');
 	}
 
 	/**
